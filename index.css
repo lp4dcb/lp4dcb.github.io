@@ -26,7 +26,7 @@ body {
 
 .unicorn {
     border: 1px solid purple;
-    background-image: url(typing.gif);
+    background-image: url(images/typing.gif);
     background-position: center;
 
 }
@@ -539,7 +539,7 @@ footer .underscore:after {
         margin-right: 3rem;
     }
 
-    .row .left {
+    .row .right {
         order: 2;
     }
 
