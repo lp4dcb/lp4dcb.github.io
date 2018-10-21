@@ -1,8 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
-    <g>
-        <path d="M 222.15625 512 L 0.5 383.996094 L 0.5 128 L 222.15625 0 L 443.808594 128 L 443.808594 383.996094 Z M 30.519531 366.667969 L 222.15625 477.332031 L 413.789062 366.667969 L 413.789062 145.332031 L 222.15625 34.667969 L 30.519531 145.332031 Z M 30.519531 366.667969 " style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" />
-        <path d="M 115.335938 317.578125 L 53.757812 256 L 115.335938 194.417969 L 136.566406 215.648438 L 96.210938 256 L 136.566406 296.351562 Z M 115.335938 317.578125 " style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" />
-        <path d="M 328.972656 317.578125 L 307.746094 296.351562 L 348.097656 256 L 307.746094 215.648438 L 328.972656 194.417969 L 390.554688 256 Z M 328.972656 317.578125 " style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" />
-        <path d="M 244.058594 178.617188 L 270.90625 192.039062 L 200.246094 333.363281 L 173.394531 319.9375 Z M 244.058594 178.617188 " style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" />
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="309.5px" height="208px" viewBox="-50 143 309.5 208" style="enable-background:new 0 143 309.5 208;" xml:space="preserve">
+<g id="Layer_2">
+</g>
+<g>
+	<g id="Layer_1_4_">
+	</g>
+	<g id="Layer_2_3_">
+	</g>
+	<g id="Layer_3_2_">
+		<g>
+			<g id="Layer_1_3_">
+				<g>
+					<path d="M101.4,347.1l-85.5-49.4V199l85.5-49.4l85.5,49.4v98.7L101.4,347.1z M27.5,291l73.9,42.7l73.9-42.7v-85.4l-73.9-42.7
+						l-73.9,42.7V291z"/>
+					<path d="M60.2,272.1l-23.7-23.7l23.7-23.7l8.2,8.2l-15.6,15.5L68.4,264L60.2,272.1z"/>
+					<path d="M142.7,272.1l-8.2-8.2l15.6-15.6l-15.6-15.5l8.2-8.2l23.7,23.7L142.7,272.1z"/>
+					<path d="M109.9,218.5l10.4,5.2L93,278.2L82.6,273L109.9,218.5z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

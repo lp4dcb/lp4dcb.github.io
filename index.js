@@ -1,6 +1,4 @@
 $(function () {
-
-
     $(function () {
         $('.container-hero').css('display', 'none');
         $('.container-hero').fadeIn(3000);

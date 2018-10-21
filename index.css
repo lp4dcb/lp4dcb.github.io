@@ -26,9 +26,13 @@ body {
 
 .unicorn {
     border: 1px solid purple;
-    background-image: url(./unicorn-typing.gif);
+    background-image: url(typing.gif);
     background-position: center;
 
+}
+
+.toast-emoji {
+    font-size: 1.5rem;
 }
 
 /*====================================*/
@@ -99,6 +103,8 @@ li a:hover {
     font-size: 1.5em;
     font-weight: bolder;
     color: #004686;
+    padding: 1px;
+    line-height: 0.9;
 }
 
 .underscore:after {
@@ -223,8 +229,12 @@ li a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#logo {
-    display: none;
+.greetingHero img {
+    margin-top: 2rem;
+}
+
+figure img {
+    width: 100%;
 }
 
 header {
@@ -240,19 +250,6 @@ header h2 {
     line-height: 1;
 }
 
-.textright strong {
-    display: block;
-    font-family: "raleway";
-    font-size: .5em;
-    font-weight: 100;
-    text-align: right;
-}
-
-.textright strong span {
-    font-weight: 900;
-    font-style: italic;
-}
-
 .em {
     color: #09a041;
 }
@@ -262,7 +259,7 @@ header h2 {
     color: #000;
     width: 100%;
     line-height: 1.5em;
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
 
 .motto {
@@ -309,11 +306,13 @@ header h2 {
 }
 
 
+.services .container {
+    max-width: 930px;
+}
 
 .services,
 .row {
     margin: 1.5rem 0;
-    overflow: hidden;
 }
 
 .services img {
@@ -325,7 +324,10 @@ header h2 {
 
 .description p {
     color: #26393D;
-    font-weight: lighter;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-top: .7rem;
 }
 
 .samples {
@@ -338,7 +340,6 @@ header h2 {
 .samples[src*=coming-soon] {
     max-width: 170px;
 }
-
 
 .contact {
     padding: 6em 0;
@@ -438,21 +439,16 @@ footer .underscore:after {
     margin: 0.5rem auto;
 }
 
-@media(max-width: 320px) {
-    header {
-        font-size: 2em;
-    }
-}
-
 @media(min-width: 768px) {
     li {
         margin-left: 1rem;
     }
 
     .menu-items {
-        margin: 1.3em;
         justify-content: flex-end;
+        align-items: center;
         background-color: transparent;
+        height: auto;
     }
 
     .menu-items li {
@@ -465,14 +461,13 @@ footer .underscore:after {
 
     .menu,
     .menu-items {
-        height: 4rem;
         display: flex;
     }
 
-    .menu>* {
+    .menu>*,
+    .greetingHero {
         flex: 1
     }
-
 
     header {
         font-size: 5rem;
@@ -482,8 +477,35 @@ footer .underscore:after {
         width: 80%;
     }
 
+    .container-fixed {
+        width: unset;
+
+    }
+
+    .greetingHero {
+        max-width: 45%;
+        margin: auto;
+    }
+
+    .unicorn-bg {
+        order: 2;
+    }
+
+    .herogroup {
+        display: flex;
+    }
+
     .hero p {
         font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .work h2 {
+        text-align: center;
+    }
+
+    .description {
+        flex: 2;
     }
 
     .description * {
@@ -495,10 +517,18 @@ footer .underscore:after {
         font-size: 3rem;
     }
 
+    .toast-emoji {
+        font-size: 2.5rem;
+    }
 
-    .services img {
-        width: 30%;
-        max-width: unset;
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .row figure {
+        width: 33%;
+        max-width: 300px;
     }
 
     .right-row-description {
@@ -509,16 +539,13 @@ footer .underscore:after {
         margin-right: 3rem;
     }
 
-    img.right {
+    .row .left {
         order: 2;
     }
 
-    .row {
-        display: flex;
-        align-items: center;
-    }
 }
 
+/* 
 @media(min-width: 1224px) {
     header {
         font-size: 7rem;
@@ -550,4 +577,4 @@ footer .underscore:after {
     .services img {
         max-width: 290px;
     }
-}
+} */
