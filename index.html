@@ -135,9 +135,11 @@
                             <div></div>
                             <header class="hello">
                                 <h2>SAY HELLO.</h2>
-                                <div class="blob-waving"><img src="https://i0.wp.com/www.pixelspot.net/wp-content/uploads/2018/07/IMG_20180717_091114_965.gif" alt=""></div>
+                                <div class="blob-waving"><img src="images/blob-waving.gif" alt=""></div>
                             </header>
-                            <form action="https://nwkuqkv519.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
+                            <form action="https://cbz9w82qv2.execute-api.us-west-2.amazonaws.com/dev/mailto-marymakes" method="POST">
+
+                            <p id="mail-response" class="form-control mail-response"></p>
                                 <div class="fgroup">
                                     <label>
                                         Name
@@ -159,7 +161,6 @@
 
                                 <button class="form-control" type="submit">Send Message</button>
                             </form>
-                            <p id="js-form-response"></p>
                         </div>
                     </div>
                 </div><!-- end #contact>content -->
@@ -191,6 +192,7 @@
 
     </footer>
     <script type="text/javascript" src="index.js"></script>
+    <script src="mail.js"></script>
 </body>
 
 </html>
