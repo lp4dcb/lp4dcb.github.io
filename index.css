@@ -66,7 +66,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     width: 66%;
-    min-width: 375px;
+    min-width: 320px;
     margin: auto;
     box-sizing: border-box;
     padding: 3rem 1rem;
@@ -237,19 +237,6 @@ figure img {
     width: 100%;
 }
 
-header {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 3.4em;
-    margin: 2rem 0;
-}
-
-header h2 {
-    color: #796ec1;
-    font-weight: 900;
-    line-height: 1;
-}
-
 .em {
     color: #09a041;
 }
@@ -294,9 +281,8 @@ header h2 {
 }
 
 .layer h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bolder;
-    line-height: 1em;
 }
 
 .services {
@@ -342,16 +328,82 @@ header h2 {
 }
 
 .contact {
-    padding: 6em 0;
     background: #52cfaf;
     color: #fff;
 }
 
+.contact .container {
+    padding-top: 2rem;
+}
+
 .hello {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    margin-top: -7rem;
+    padding: 1.5rem;
+    position: absolute;
+    color: #000000;
 }
+
+.hello-form {
+    width: 100%;
+}
+
+.hello-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+form {
+    background: #fff;
+    padding: 10rem 1rem 1rem;
+    color: black;
+    margin-top: -6rem;
+    width: 80%;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #e6c0c000;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    /* border-radius: .25rem; */
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.fgroup {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 100;
+}
+
+button.form-control {
+    background: #5cd5b8;
+    padding: 0.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 .blob-waving img {
     width: 80px;
@@ -504,6 +556,10 @@ footer .underscore:after {
         text-align: center;
     }
 
+    .work .container {
+        padding-bottom: 5rem;
+    }
+
     .description {
         flex: 2;
     }
@@ -541,6 +597,16 @@ footer .underscore:after {
 
     .row .right {
         order: 2;
+    }
+
+    .hello {
+        flex-direction: row;
+        align-items: baseline;
+        padding: 1rem;
+    }
+
+    form {
+        padding-top: 7rem;
     }
 
 }

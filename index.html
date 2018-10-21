@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="fontello/css/instagram.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald:100|Teko:300|Raleway:100,700" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -129,13 +128,42 @@
 
         <section data-section="contact" id="contact" class="contact">
             <div data-here></div>
-            <div class="content hello">
-                <div class="blob-waving"><img src="https://i0.wp.com/www.pixelspot.net/wp-content/uploads/2018/07/IMG_20180717_091114_965.gif" alt=""></div>
-                <div>
-                    <h2>SAY HELLO.</h2>
-                    <p>hello@lustypixels.com</p>
-                </div>
-            </div><!-- end #contact>content -->
+            <div class="container">
+                <div class="content">
+                    <div class="hello-form">
+                        <div class="hello-container">
+                            <div></div>
+                            <header class="hello">
+                                <h2>SAY HELLO.</h2>
+                                <div class="blob-waving"><img src="https://i0.wp.com/www.pixelspot.net/wp-content/uploads/2018/07/IMG_20180717_091114_965.gif" alt=""></div>
+                            </header>
+                            <form action="https://nwkuqkv519.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
+                                <div class="fgroup">
+                                    <label>
+                                        Name
+                                    </label>
+                                    <input class="form-control" type="text" name="name" required>
+                                </div>
+                                <div class="fgroup">
+                                    <label>
+                                        Email
+                                    </label>
+                                    <input class="form-control" type="email" name="reply_to" required>
+                                </div>
+                                <div class="fgroup">
+                                    <label>
+                                        Message:
+                                    </label>
+                                    <textarea class="form-control" name="message" required></textarea>
+                                </div>
+
+                                <button class="form-control" type="submit">Send Message</button>
+                            </form>
+                            <p id="js-form-response"></p>
+                        </div>
+                    </div>
+                </div><!-- end #contact>content -->
+            </div>
             <!--        </div> end container    -->
         </section><!-- end contact -->
 
