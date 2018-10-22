@@ -73,7 +73,7 @@ li a:hover {
 }
 
 .hero .container {
-    margin-top: 5rem;
+    margin-top: 7rem;
     padding: 1rem;
 }
 
@@ -282,6 +282,7 @@ figure img {
 
 .layer h2 {
     font-size: 2rem;
+    line-height: 1;
     font-weight: bolder;
 }
 
