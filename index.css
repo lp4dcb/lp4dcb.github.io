@@ -283,7 +283,6 @@ figure img {
 .layer h2 {
     font-size: 2rem;
     font-weight: bolder;
-    text-align: center;
 }
 
 .services {
@@ -315,6 +314,10 @@ figure img {
     font-size: 1.4rem;
     line-height: 1.2;
     margin-top: .7rem;
+}
+
+.work h2 {
+    text-align: center;
 }
 
 .samples {
@@ -468,7 +471,6 @@ form {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
-    /* border-radius: .25rem; */
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -486,6 +488,7 @@ label {
 
 button.form-control {
     background: #5cd5b8;
+    outline: none;
     padding: 0.7rem;
     color: #fff;
     text-transform: uppercase;
@@ -644,10 +647,6 @@ footer .underscore:after {
 
     .hero p {
         font-size: 1.9rem;
-        text-align: center;
-    }
-
-    .work h2 {
         text-align: center;
     }
 

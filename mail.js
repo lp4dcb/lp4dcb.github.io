@@ -11,7 +11,7 @@
 
         console.log(JSON.stringify(data));
 
-        var xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
         xhr.open(form.method, form.action, true);
         xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
