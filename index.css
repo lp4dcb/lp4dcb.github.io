@@ -330,6 +330,10 @@ figure img {
     margin: 5em auto;
 }
 
+.samples:last-child {
+    margin-bottom: 10rem;
+}
+
 .samples[src*=coming-soon] {
     max-width: 170px;
 }
@@ -366,6 +370,36 @@ figure img {
     position: relative;
     align-items: center;
 }
+
+
+.work figcaption {
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+}
+
+.work .underscore:after {
+    width: 15px;
+}
+
+.lp .underscore:after {
+    background-color: #d72a1d;
+}
+
+.ed .underscore:after {
+    background-color: #9C27B0;
+}
+
+.ff .underscore:after {
+    background-color: #FF5722;
+}
+
+.ui .underscore:after {
+    background-color: #20bba6;
+}
+
 
 .form-control.mail-response {
     background-color: #000;
@@ -563,7 +597,7 @@ button.form-control {
 }
 
 footer {
-    background-color: #08006fa6;
+    background-color: #6b67a4;
 }
 
 footer .container {
