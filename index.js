@@ -219,58 +219,61 @@ $(function () {
         $(window).fadeThis();
     });
 
+    $(function () {
 
 
-    let within = 0;
-    let wasWithin = null;
 
-    let tops = [
-        $('[data-section="about"]').position().top,
-        $('[data-section="work"]').position().top,
-        $('[data-section="contact"]').position().top,
-    ];
+        let within = 0;
+        let wasWithin = null;
 
-    let $menuItems = $('.nav-item');
-
-    function followMenu() {
-        let top = $(window).scrollTop();
-        for (let i = 0; i < tops.length; i++) {
-            if (top < tops[i] && top > 0) {
-                within = i - 1;
-                break;
-            } else if (top > tops[i] && i == tops.length - 1) {
-                within = tops.length - 1;
-            }
-        }
-        if (within !== wasWithin) {
-            $menuItems.removeClass('active').eq(within).addClass('active');
-            wasWithin = within;
-        }
-    }
-
-    function setTops() {
-        tops = [
+        let tops = [
             $('[data-section="about"]').position().top,
             $('[data-section="work"]').position().top,
             $('[data-section="contact"]').position().top,
         ];
-    }
 
-    $menuItems.click(function (e) {
-        $('#nav-toggle').removeClass('is-active')
-        const n = $('#nav')
-        if ($(n).hasClass('nav-open')) {
-            $(n).animate({ height: 0 })
-            $(n).removeClass('nav-open')
+        let $menuItems = $('.nav-item');
+
+        function followMenu() {
+            let top = $(window).scrollTop();
+            for (let i = 0; i < tops.length; i++) {
+                if (top < tops[i] && top > 0) {
+                    within = i - 1;
+                    break;
+                } else if (top > tops[i] && i == tops.length - 1) {
+                    within = tops.length - 1;
+                }
+            }
+            if (within !== wasWithin) {
+                $menuItems.removeClass('active').eq(within).addClass('active');
+                wasWithin = within;
+            }
         }
-        let $section = $('[data-section="' + $(this).attr('data-control') + '"]');
-        $('body,html').animate({
-            scrollTop: $section.find('[data-here]').position().top - window.innerHeight * 0.15
-        }, '500', 'swing', function () { });
+
+        function setTops() {
+            tops = [
+                $('[data-section="about"]').position().top,
+                $('[data-section="work"]').position().top,
+                $('[data-section="contact"]').position().top,
+            ];
+        }
+
+        $menuItems.click(function (e) {
+            $('#nav-toggle').removeClass('is-active')
+            const n = $('#nav')
+            if ($(n).hasClass('nav-open')) {
+                $(n).animate({ height: 0 })
+                $(n).removeClass('nav-open')
+            }
+            let $section = $('[data-section="' + $(this).attr('data-control') + '"]');
+            $('body,html').animate({
+                scrollTop: $section.find('[data-here]').position().top - window.innerHeight * 0.15
+            }, '500', 'swing', function () { });
+        });
+
+        $(window).scroll(followMenu);
+        $(window).resize(setTops);
+
+        followMenu();
     });
-
-    $(window).scroll(followMenu);
-    $(window).resize(setTops);
-
-    followMenu();
 })
