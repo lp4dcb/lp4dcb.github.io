@@ -459,7 +459,7 @@ form {
     padding: 10rem 1rem 1rem;
     color: black;
     margin-top: -6rem;
-    width: 80%;
+    width: 100%;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -688,6 +688,7 @@ footer .underscore:after {
 
     form {
         padding-top: 7rem;
+        width: 80%;
     }
 
 
