@@ -34,7 +34,7 @@ module.exports.hello = (event, context, callback) => {
       statusCode: err ? 500 : 200,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'http://mary-makes.com',
+        'Access-Control-Allow-Origin': '*',
       },
       body: JSON.stringify({
         message: err ? err.message : data,

@@ -152,6 +152,18 @@ li a:hover {
     text-decoration: none;
 }
 
+.nav-toggle-box {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 44px;
+    width: 60px;
+}
+
+.nav-toggle-box:hover {
+    cursor: pointer;
+}
+
 .nav-toggle {
     top: 1.4em;
     right: 1em;
