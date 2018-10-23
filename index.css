@@ -508,6 +508,8 @@ button.form-control {
 /*SOCIAL LINKS STYLES*/
 .social-svg figcaption {
     font-size: 0.9rem;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
 }
 
 .social .container {
@@ -544,20 +546,6 @@ button.form-control {
 
 .social-svg svg {
     fill: #6b67a4;
-}
-
-.social-svg:hover {
-    cursor: pointer;
-    background-color: #6b67a4;
-    transform: scale(1.3);
-}
-
-.social-svg:hover figcaption {
-    color: #fff;
-}
-
-.social-svg:hover svg {
-    fill: #fff;
 }
 
 footer {
@@ -711,4 +699,19 @@ footer .underscore:after {
         flex: 1;
         margin: 0 auto;
     }
+
+    .social-svg:hover {
+        cursor: pointer;
+        background-color: #6b67a4;
+        transform: scale(1.3);
+    }
+
+    .social-svg:hover figcaption {
+        color: #fff;
+    }
+
+    .social-svg:hover svg {
+        fill: #fff;
+    }
+
 }
