@@ -1,5 +1,4 @@
 $(function () {
-    window.location.replace("/#👻")
     $('.container-hero').css('display', 'none');
     $('.container-hero').fadeIn(3000);
 
@@ -8,6 +7,7 @@ $(function () {
     };
 
     if (!isMobileDevice()) {
+        window.location.replace("/#👻")
         $('body').removeClass('mobile')
     }
 
