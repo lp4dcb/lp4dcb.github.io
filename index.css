@@ -548,6 +548,20 @@ button.form-control {
     fill: #6b67a4;
 }
 
+:not(.mobile) .social-svg:hover {
+    cursor: pointer;
+    background-color: #6b67a4;
+    transform: scale(1.3);
+}
+
+:not(.mobile) .social-svg:hover figcaption {
+    color: #fff;
+}
+
+:not(.mobile) .social-svg:hover svg {
+    fill: #fff;
+}
+
 footer {
     background-color: #08006fa6;
 }
@@ -700,19 +714,4 @@ footer .underscore:after {
         flex: 1;
         margin: 0 auto;
     }
-
-    .social-svg:hover {
-        cursor: pointer;
-        background-color: #6b67a4;
-        transform: scale(1.3);
-    }
-
-    .social-svg:hover figcaption {
-        color: #fff;
-    }
-
-    .social-svg:hover svg {
-        fill: #fff;
-    }
-
 }
