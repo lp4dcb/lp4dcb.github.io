@@ -1,6 +1,9 @@
+import $ from 'jquery'; window.jQuery = $; window.$ = $;
+import sendMail from './mail';
+
 $(function () {
     window.location.replace("/#👻")
-    
+    sendMail();
     $('.container-hero').css('display', 'none');
     $('.container-hero').fadeIn(3000);
 

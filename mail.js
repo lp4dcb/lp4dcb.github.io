@@ -1,4 +1,4 @@
-(() => {
+const sendMail = () => {
     const form = document.querySelector('form');
     const mailResponse = document.querySelector('#mail-response');
 
@@ -9,7 +9,7 @@
         const formElements = Array.from(form);
         formElements.map(input => (data[input.name] = input.value));
 
-        console.log(JSON.stringify(data));
+        // console.log(JSON.stringify(data));
 
         let xhr = new XMLHttpRequest();
         xhr.open(form.method, form.action, true);
@@ -34,4 +34,5 @@
             }
         };
     };
-})();
+};
+export default sendMail;
