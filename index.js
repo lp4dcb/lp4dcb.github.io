@@ -263,9 +263,7 @@ $(function() {
   let sectionTops = getTops(sections);
 
   function getTops(sections) {
-    return sections.map(sect => {
-      $(sect).position().top;
-    });
+    return sections.map(sect => $(sect).position().top);
   }
 
   function followMenu() {
@@ -288,9 +286,6 @@ $(function() {
     }
   }
 
-  function resetTops() {
-    sectionTops;
-  }
 
   let $menuItems = $(".nav-item");
 
@@ -318,9 +313,6 @@ $(function() {
       function() {}
     );
   });
-
-  $(window).scroll(followMenu);
-  $(window).resize(resetTops);
 
   followMenu();
 });
